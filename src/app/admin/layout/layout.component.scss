@@ -13,10 +13,17 @@
     .sidenav {
       padding: 12px;
       width: 250px;
-      background: $white;
+      height: 100%;
+      background:   linear-gradient(
+        rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45)
+      ),url('../../../assets/images/sidebar-3.jpg') no-repeat center top;
     }
     .main-container {
       padding: 16px;
     }
   }
 }
+// .imageOpacity {
+//   opacity: 0.4;
+// }

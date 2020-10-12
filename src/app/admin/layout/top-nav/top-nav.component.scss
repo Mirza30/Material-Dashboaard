@@ -1,15 +1,22 @@
 @import '~src/scss/variables';
 
 :host {
-  display: block;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: $sidnav-background-color;
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
-  z-index: 1000;
 }
 .nav-brand {
   text-align: center;
+  width: 250px;
+  height: 38px;
+  background: #d46468;
+  padding: 11px 0px 14px 0px;
+  color: white;
+  border-bottom: 1px solid #d0c6c6;
 }
 .topnav-icon {
   text-decoration: none;
@@ -44,4 +51,14 @@
   .hidden-sm {
       display: none;
   }
+}
+.mat-toolbar-row, .mat-toolbar-single-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 0;
+  background: #FAFAFA;
+  color: #3f51b5;
 }
