@@ -8,6 +8,7 @@ import { childRoutes } from '../../child-routes';
 })
 export class SideNavComponent implements OnInit {
   showMenu = false;
+  showMenu1 = false;
   routes = childRoutes;
   constructor() {}
 

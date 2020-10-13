@@ -18,6 +18,10 @@
   color: white;
   border-bottom: 1px solid #d0c6c6;
 }
+.nav-brand-dispear {
+  display: none;
+  transition: display 2s linear;
+}
 .topnav-icon {
   text-decoration: none;
   display: flex;
@@ -26,6 +30,9 @@
 
 .nav-spacer {
   flex: 1 1 auto;
+}
+.visible-lg {
+  display: none;
 }
 
 .visible-md {
@@ -39,12 +46,22 @@
       display: block;
   }
 }
+@media screen and (min-width: 993px) {
+  .visible-lg {
+    display: block;
+    font-size: 1rem !important;
+    margin-left: 10px;
+    background-color: #ffffff !important;
+  }
+}
 @media screen and (max-width: 768px) {
   .visible-sm {
       display: block;
   }
   .nav-brand {
       width: 100%;
+      background:#FAFAFA;
+      color: #d46468;
   }
 }
 @media screen and (max-width: 768px) {

@@ -22,3 +22,27 @@ $icon-color: #484848;
         color: rgb(168, 167, 167) !important ; 
       }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 20px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9c9696; 
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9c9696; 
+}
+.mat-drawer-inner-container {
+  width: 105% !important;
+}

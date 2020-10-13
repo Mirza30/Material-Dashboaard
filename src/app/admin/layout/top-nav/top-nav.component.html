@@ -2,9 +2,12 @@
   <button type="button" mat-icon-button class="visible-md" (click)="toggleSidebar()">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
-  <div class="nav-brand">
+  <div [ngClass]="status ? 'nav-brand-dispear' : 'nav-brand'">
     Admin Portal
   </div>
+  <button mat-mini-fab class="visible-lg" (click)="toggleSidebar()">
+    <mat-icon aria-label="Side nav toggle icon">more_vert</mat-icon>
+  </button>
   <span class="nav-spacer"></span>
   <form class="hidden-sm" style="margin-right: 20px; margin-top: 8px">
     <mat-form-field style="font-size: 1rem;">

@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class TopNavComponent implements OnInit {
   @Output() sideNavToggled = new EventEmitter<void>();
+  status = false;
 
   constructor(private readonly router: Router) {}
 
@@ -15,6 +16,7 @@ export class TopNavComponent implements OnInit {
 
   toggleSidebar() {
     this.sideNavToggled.emit();
+    this.status = !this.status;
   }
 
   onLoggedout() {
